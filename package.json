@@ -1,0 +1,32 @@
+{
+  "name": "generator-dropwizard-gradle",
+  "version": "0.1.0",
+  "author": {
+    "name": "Trevor Fountain",
+    "email": "trevor@texasexpat.net",
+    "url": "http://texasexpat.net"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/doches/generator-dropwizard-gradle"
+  },
+  "bugs": "https://github.com/doches/generator-dropwizard-gradle/issues",
+  "homepage": "https://github.com/doches/generator-dropwizard-gradle",
+  "description": "Scaffolds out an API server powered by Java 8 + Dropwizard",
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "dropwizard",
+    "gradle",
+    "java",
+    "server",
+    "api"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "yeoman-generator": "^0.20.3",
+    "yosay": "^1.2.0"
+  }
+}
