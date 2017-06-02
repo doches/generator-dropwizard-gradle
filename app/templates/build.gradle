@@ -6,8 +6,6 @@ buildscript {
 
     dependencies {
         classpath "commons-codec:commons-codec:$commonsCodecVersion"
-        classpath "com.moowork.gradle:gradle-node-plugin:$nodePluginVersion"
-        classpath "com.moowork.gradle:gradle-gulp-plugin:$gulpPluginVersion"
         classpath "com.palantir:gradle-flexversion:$flexVersion"
     }
 }
