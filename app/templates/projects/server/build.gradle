@@ -10,9 +10,13 @@ apply plugin: 'java'
 dependencies {
     compile "io.dropwizard:dropwizard-core:$dropwizardVersion"
     compile "io.dropwizard:dropwizard-jdbi:$dropwizardVersion"
+
+    compile "org.antlr:stringtemplate:$antlrVersion"
     compile "org.postgresql:postgresql:$postgresqlVersion"
+    compile "org.glassfish.jersey.core:jersey-client:$jerseyVersion"
     compile "commons-codec:commons-codec:$commonsCodecVersion"
-    compile "io.dropwizard-bundles:dropwizard-configurable-assets-bundle:$dropwizardConfigurableAssetsBundleVersion"
+    compile "com.google.guava:guava:$guavaVersion"
+    compile "org.apache.directory.studio:org.apache.commons.io:$apacheCommonsVersion"
 
     testCompile "io.dropwizard:dropwizard-testing:$dropwizardVersion"
     testCompile "org.mockito:mockito-all:$mockitoAllVersion"

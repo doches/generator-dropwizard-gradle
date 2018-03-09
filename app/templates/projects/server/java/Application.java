@@ -1,7 +1,6 @@
 package <%= package %>;
 
 import io.dropwizard.Application;
-import io.dropwizard.bundles.assets.ConfiguredAssetsBundle;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import <%= package %>.backend.DatabaseBackend;
@@ -17,7 +16,7 @@ public final class <%= className %>Application extends Application<<%= className
 
     @Override
     public void initialize(Bootstrap<<%= className %>Configuration> bootstrap) {
-      
+
     }
 
     @Override

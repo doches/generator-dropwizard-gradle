@@ -94,6 +94,8 @@ module.exports = yeoman.generators.Base.extend({
                     "src/standard/var/conf/README",
                     "src/standard/var/log/README",
                     "src/standard/var/run/README",
+                    "src/standard/scripts/api.sh",
+                    "src/standard/scripts/api.service",
                     "build.gradle"
                 ]],
                 ["server", [
