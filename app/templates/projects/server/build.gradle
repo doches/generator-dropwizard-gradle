@@ -17,6 +17,7 @@ dependencies {
     compile "commons-codec:commons-codec:$commonsCodecVersion"
     compile "com.google.guava:guava:$guavaVersion"
     compile "org.apache.directory.studio:org.apache.commons.io:$apacheCommonsVersion"
+    compile "org.immutables:value:$immutablesVersion"
 
     testCompile "io.dropwizard:dropwizard-testing:$dropwizardVersion"
     testCompile "org.mockito:mockito-all:$mockitoAllVersion"
