@@ -1,0 +1,1 @@
+On first install (on CentOS), copy `api.service` to `/etc/systemd/system/<name>-api.service`

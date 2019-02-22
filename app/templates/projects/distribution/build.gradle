@@ -31,9 +31,10 @@ distributions {
                     includeEmptyDirs true
                 }
             }
-            into ('web') {
-                from("$projectDir/../<%= slug %>-app/build/min") {
-                    include "**/*"
+            into ('scripts') {
+                from("$projectDir/src/standard/scripts") {
+                    exclude '**/.gitkeep'
+                    includeEmptyDirs true
                 }
             }
         }
