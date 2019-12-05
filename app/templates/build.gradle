@@ -27,7 +27,7 @@ repositories {
 // ==========
 // Versioning
 // ==========
-apply plugin: 'gradle-flexversion'
+apply plugin: ' com.palantir.flexversion'
 flexversion {
     useTags = true
 }
