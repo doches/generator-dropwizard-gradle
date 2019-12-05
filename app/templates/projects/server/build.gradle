@@ -8,6 +8,7 @@ apply plugin: 'java'
 // Dependencies
 // ============
 dependencies {
+    compile project(':<%= slug %>-api')
     compile "io.dropwizard:dropwizard-core:$dropwizardVersion"
     compile "io.dropwizard:dropwizard-jdbi:$dropwizardVersion"
 

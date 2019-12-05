@@ -1,0 +1,12 @@
+// =======
+// Plugins
+// =======
+apply from: "$rootDir/gradle/repositories.gradle"
+apply plugin: 'java'
+
+// ============
+// Dependencies
+// ============
+dependencies {
+    compile "javax.ws.rs:javax.ws.rs-api:$jaxrsVersion"
+}
