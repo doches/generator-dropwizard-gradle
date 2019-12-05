@@ -48,3 +48,7 @@ allprojects {
 // IDEA
 // ====
 apply from: "$rootDir/gradle/idea.gradle"
+
+subprojects {
+    apply plugin: 'idea'
+}
