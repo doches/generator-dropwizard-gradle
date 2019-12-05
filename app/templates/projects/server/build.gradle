@@ -18,6 +18,10 @@ dependencies {
     compile "com.google.guava:guava:$guavaVersion"
     compile "org.apache.directory.studio:org.apache.commons.io:$apacheCommonsVersion"
     compile "org.immutables:value:$immutablesVersion"
+    
+    compile "javax.activation:activation:$activationVersion"
+    compile "org.glassfish.jaxb:jaxb-runtime:$jaxbVersion"
+    compile "javax.xml.bind:jaxb-api:$jaxbVersion"
 
     testCompile "io.dropwizard:dropwizard-testing:$dropwizardVersion"
     testCompile "org.mockito:mockito-all:$mockitoAllVersion"
