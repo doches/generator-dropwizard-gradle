@@ -13,7 +13,6 @@ dependencies {
 
     compile "org.antlr:stringtemplate:$antlrVersion"
     compile "org.postgresql:postgresql:$postgresqlVersion"
-    compile "org.glassfish.jersey.core:jersey-client:$jerseyVersion"
     compile "commons-codec:commons-codec:$commonsCodecVersion"
     compile "com.google.guava:guava:$guavaVersion"
     compile "org.apache.directory.studio:org.apache.commons.io:$apacheCommonsVersion"
@@ -24,5 +23,4 @@ dependencies {
     compile "javax.xml.bind:jaxb-api:$jaxbVersion"
 
     testCompile "io.dropwizard:dropwizard-testing:$dropwizardVersion"
-    testCompile "org.mockito:mockito-all:$mockitoAllVersion"
 }
