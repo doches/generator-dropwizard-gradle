@@ -98,6 +98,9 @@ module.exports = class extends Generator {
             ]],
             ["server", [
                 "build.gradle"
+            ]],
+            ["api", [
+                "build.gradle"
             ]]
         ]
         for (var p = 0; p < projects.length; p++) {
@@ -123,7 +126,8 @@ module.exports = class extends Generator {
         var packageDir = this.props.package.replace(/\./g, "/");
         var files = [
             "backend/DatabaseBackend.java",
-            "backend/DatabaseConfiguration.java"
+            "backend/DatabaseConfiguration.java",
+            "resource/TestResource.java"
         ];
         for (var i = 0; i < files.length; i++) {
             this.fs.copyTpl(
@@ -141,6 +145,18 @@ module.exports = class extends Generator {
             this.fs.copyTpl(
                 this.templatePath("projects/server/java/" + files[i]),
                 this.destinationPath(this.props.slug + "-server/src/main/java/" + packageDir + "/" + this.props.className + files[i]),
+                this.props
+            );
+        }
+
+        // API project
+        var files = [
+            "resource/TestService.java"
+        ];
+        for (var i = 0; i < files.length; i++) {
+            this.fs.copyTpl(
+                this.templatePath("projects/api/java/" + files[i]),
+                this.destinationPath(this.props.slug + "-api/src/main/java/" + packageDir + "/" + files[i]),
                 this.props
             );
         }

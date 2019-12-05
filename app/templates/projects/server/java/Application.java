@@ -4,7 +4,7 @@ import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import <%= package %>.backend.DatabaseBackend;
-import <%= package %>.resource.TestService;
+import <%= package %>.resource.TestResource;
 
 /**
  * Main entry point to the <%= name %> API server.
