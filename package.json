@@ -6,13 +6,19 @@
     "email": "trevor@texasexpat.net",
     "url": "http://texasexpat.net"
   },
+  "contributors": [
+    {
+      "name": "Tom Alexander",
+      "email": "tom.h.alexander@googlemail.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/doches/generator-dropwizard-gradle"
   },
   "bugs": "https://github.com/doches/generator-dropwizard-gradle/issues",
   "homepage": "https://github.com/doches/generator-dropwizard-gradle",
-  "description": "Scaffolds out an API server powered by Java 8 + Dropwizard",
+  "description": "Scaffolds out an API server powered by Java + Dropwizard",
   "files": [
     "app"
   ],
