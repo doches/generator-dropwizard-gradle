@@ -24,7 +24,7 @@ jobs: # a collection of steps
             - ./node_modules
       - run:
           name: npm-link
-          command: 'npm link'
+          command: 'sudo npm link'
       - run:
           name: make-test-directory
           command: 'mkdir test-application'
