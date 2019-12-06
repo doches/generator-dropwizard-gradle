@@ -9,4 +9,8 @@ apply plugin: 'java'
 // ============
 dependencies {
     compile "javax.ws.rs:javax.ws.rs-api:$jaxrsVersion"
+    
+    processor "org.immutables:value:2.8.2"
+    compileOnly "org.immutables:value:2.8.2"
+
 }
