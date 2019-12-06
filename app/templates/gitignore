@@ -33,3 +33,8 @@ npm-debug.log
 
 ### Vim ###
 *.sw[op]
+
+**/generated_src
+**/log
+**/build
+.java-version
