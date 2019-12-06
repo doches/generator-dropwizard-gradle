@@ -29,7 +29,8 @@ jobs: # a collection of steps
           name: make-test-directory
           command: 'mkdir test-application'
       - run:
-          name: 'echo -en "\n\n\n" | yo dropwizard-gradle'
+          name: generate-test-project
+          command: 'echo -en "\n\n\n" | yo dropwizard-gradle'
           shell: /bin/bash
           working_directory: ~/test-application
           no_output_timeout: 5m
