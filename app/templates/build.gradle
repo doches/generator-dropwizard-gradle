@@ -15,7 +15,7 @@ buildscript {
 // Plugins
 // =======
 apply from: "$rootDir/gradle/repositories.gradle"
-apply plugin: 'java-base'
+apply plugin: 'java'
 apply plugin: 'idea'
 
 // ============
