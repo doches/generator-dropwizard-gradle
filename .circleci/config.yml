@@ -14,7 +14,7 @@ jobs: # a collection of steps
           key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
           name: yeoman-install
-          command: 'npm install -g yo@latest'
+          command: 'sudo npm install -g yo@latest'
       - run:
           name: npm-install
           command: 'npm install'
