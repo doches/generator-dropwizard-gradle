@@ -7,6 +7,7 @@ buildscript {
     dependencies {
         classpath "commons-codec:commons-codec:$commonsCodecVersion"
         classpath "com.palantir:gradle-flexversion:$flexVersion"
+        classpath "gradle.plugin.org.inferred:gradle-processors:$gradleProcessorsVersion"
     }
 }
 
@@ -51,4 +52,5 @@ apply from: "$rootDir/gradle/idea.gradle"
 
 subprojects {
     apply plugin: 'idea'
+    apply plugin: 'org.inferred.processors'
 }

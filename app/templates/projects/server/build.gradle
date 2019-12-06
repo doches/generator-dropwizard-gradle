@@ -23,5 +23,9 @@ dependencies {
     compile "org.glassfish.jaxb:jaxb-runtime:$jaxbVersion"
     compile "javax.xml.bind:jaxb-api:$jaxbVersion"
 
+
+    processor "org.immutables:value:2.8.2"
+    compileOnly "org.immutables:value:2.8.2"
+
     testCompile "io.dropwizard:dropwizard-testing:$dropwizardVersion"
 }
