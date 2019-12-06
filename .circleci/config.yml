@@ -33,4 +33,8 @@ jobs: # a collection of steps
           command: 'echo -en "\n\n\n\n\n\n" | yo dropwizard-gradle'
           shell: /bin/bash
           working_directory: ~/test-application
-          no_output_timeout: 5m
+      - run:
+          name: build-test-project
+          command: './gradlew distZip'
+          shell: /bin/bash
+          working_directory: ~/test-application
