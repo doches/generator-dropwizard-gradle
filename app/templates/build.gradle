@@ -6,7 +6,6 @@ buildscript {
 
     dependencies {
         classpath "commons-codec:commons-codec:$commonsCodecVersion"
-        classpath "com.palantir:gradle-flexversion:$flexVersion"
         classpath "gradle.plugin.org.inferred:gradle-processors:$gradleProcessorsVersion"
     }
 }
@@ -14,6 +13,10 @@ buildscript {
 // =======
 // Plugins
 // =======
+plugins {
+    id "com.palantir.git-version" version "$gitVersionVersion"
+}
+
 apply from: "$rootDir/gradle/repositories.gradle"
 apply plugin: 'java'
 apply plugin: 'idea'
@@ -25,18 +28,9 @@ repositories {
     mavenCentral()
 }
 
-// ==========
-// Versioning
-// ==========
-apply plugin: 'gradle-flexversion'
-flexversion {
-    useTags = true
-}
-addPrintVersionTask()
-
 allprojects {
     group '<%= package %>'
-    version flexVersion()
+    version gitVersion()
 
     // ============
     // Java Version
