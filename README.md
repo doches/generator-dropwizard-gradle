@@ -21,6 +21,21 @@ Create the directory in which your new project will live, then call Yeoman to sc
 
 Answer a couple of easy questions, and you'll be greeted with a ready-to-rock project. Open the directory up in your Java IDE of choice (I like [IDEA](https://www.jetbrains.com/idea/)), import the project as a Gradle project, and you're good to go.
 
+### Running
+
+You can start your server for testing like so:
+
+    ./gradlew run
+
+This will start the server with the configuration file at:
+
+    <project>-distribution/src/dev/var/conf/server.yml
+
+And the keystore / truststores at:
+
+    <project>-distribution/src/standard/var/conf
+
+
 ### Shipping
 
 Wow, that was fast! Once you're ready to deploy, run:

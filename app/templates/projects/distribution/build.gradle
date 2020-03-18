@@ -48,3 +48,14 @@ eclipse {
         referencedProjects '<%= slug %>-server'
     }
 }
+
+// ======================================
+// Configure the 'run' task, so you can
+// start the server with './gradlew run'
+// ======================================
+run {
+    args+="server"
+    args+="$projectDir/src/dev/var/conf/server.yml"
+
+    workingDir="$projectDir/src/standard"
+}
