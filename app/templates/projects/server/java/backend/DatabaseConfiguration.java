@@ -14,9 +14,4 @@ public interface DatabaseConfiguration {
     
     @JsonProperty("connection")
     DataSourceFactory getDataSourceFactory();
-
-    public Jdbi createDBI(Environment environment, String name) {
-        final JdbiFactory factory = new JdbiFactory();
-        return factory.build(environment, getDataSourceFactory(), name);
-    }
 }
