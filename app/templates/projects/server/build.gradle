@@ -10,7 +10,7 @@ apply plugin: 'java'
 dependencies {
     compile project(':<%= slug %>-api')
     compile "io.dropwizard:dropwizard-core:$dropwizardVersion"
-    compile "io.dropwizard:dropwizard-jdbi:$dropwizardJdbiVersion"
+    compile "io.dropwizard:dropwizard-jdbi3:$dropwizardVersion"
 
     compile "org.antlr:stringtemplate:$antlrVersion"
     compile "org.postgresql:postgresql:$postgresqlVersion"

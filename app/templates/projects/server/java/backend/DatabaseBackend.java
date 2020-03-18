@@ -1,6 +1,6 @@
 package <%= package %>.backend;
 
-import org.skife.jdbi.v2.sqlobject.SqlQuery;
+import org.jdbi.v3.sqlobject.statement.SqlQuery;
 
 public abstract class DatabaseBackend {
     @SqlQuery("select 1")
