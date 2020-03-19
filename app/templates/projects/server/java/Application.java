@@ -22,7 +22,7 @@ public final class <%= className %>Application extends Application<<%= className
 
     @Override
     public void run(final <%= className %>Configuration configuration, final Environment environment) {
-        //DatabaseBackend databaseBackend = configuration.getDatabaseBackend(environment);
+        DatabaseBackend databaseBackend = configuration.getDatabaseBackend(environment);
 
         environment.jersey().register(new TestResource());
     }
