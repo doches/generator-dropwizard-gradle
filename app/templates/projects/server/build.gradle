@@ -8,20 +8,20 @@ apply plugin: 'java'
 // Dependencies
 // ============
 dependencies {
-    compile project(':<%= slug %>-api')
-    compile "io.dropwizard:dropwizard-core:$dropwizardVersion"
-    compile "io.dropwizard:dropwizard-jdbi3:$dropwizardVersion"
+    implementation project(':<%= slug %>-api')
+    implementation "io.dropwizard:dropwizard-core:$dropwizardVersion"
+    implementation "io.dropwizard:dropwizard-jdbi3:$dropwizardVersion"
 
-    compile "org.antlr:stringtemplate:$antlrVersion"
-    compile "org.postgresql:postgresql:$postgresqlVersion"
-    compile "commons-codec:commons-codec:$commonsCodecVersion"
-    compile "com.google.guava:guava:$guavaVersion"
-    compile "org.apache.directory.studio:org.apache.commons.io:$apacheCommonsVersion"
-    compile "org.immutables:value:$immutablesVersion"
+    implementation "org.antlr:stringtemplate:$antlrVersion"
+    implementation "org.postgresql:postgresql:$postgresqlVersion"
+    implementation "commons-codec:commons-codec:$commonsCodecVersion"
+    implementation "com.google.guava:guava:$guavaVersion"
+    implementation "org.apache.directory.studio:org.apache.commons.io:$apacheCommonsVersion"
+    implementation "org.immutables:value:$immutablesVersion"
     
-    compile "javax.activation:activation:$activationVersion"
-    compile "org.glassfish.jaxb:jaxb-runtime:$jaxbVersion"
-    compile "javax.xml.bind:jaxb-api:$jaxbVersion"
+    implementation "javax.activation:activation:$activationVersion"
+    implementation "org.glassfish.jaxb:jaxb-runtime:$jaxbVersion"
+    implementation "javax.xml.bind:jaxb-api:$jaxbVersion"
 
 
     processor "org.immutables:value:2.8.2"
